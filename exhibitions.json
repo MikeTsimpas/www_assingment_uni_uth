@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Nymphéas bleus",
+        "location": "Musée d'Orsay, Paris",
+        "year": 1916,
+        "description": "A beautiful depiction of water lilies."
+    },
+    {
+        "title": "Impression, Sunrise",
+        "location": "Musée d'Orsay, Paris",
+        "year": 1872,
+        "description": "The painting that gave Impressionism its name."
+    },
+    {
+        "title": "The Museum at Le Havre",
+        "location": "National Gallery, London",
+        "year": 1874,
+        "description": "An impressive view of the Museum at Le Havre."
+    },
+    {
+        "title": "Woman with a Parasol",
+        "location": "National Gallery of Art, Washington",
+        "year": 1875,
+        "description": "A portrait of Monet's wife with a parasol."
+    }
+]

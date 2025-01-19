@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="script.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Monet Biography</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas: 
+                'header header header'
+                'nav main aside'
+                'footer footer footer';
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header {
+            grid-area: header;
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            grid-area: nav;
+            background: #f4f4f4;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0.5rem 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 0.5rem;
+            display: block;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background: #333;
+            color: white;
+        }
+        aside {
+            grid-area: aside;
+            background: #f4f4f4;
+            padding: 1rem;
+        }
+        main {
+            grid-area: main;
+            padding: 1rem;
+        }
+        footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Claude Monet</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#" onclick="showSection('biography'); toggleSubMenu('biography-submenu')">Biography</a>
+                <nav id="biography-submenu">
+                    <ul>
+                        <li><a href="#" onclick="showSubmenuContent('info')">Information</a></li>
+                        <li><a href="#" onclick="showSubmenuContent('birth')">Birth and Childhood</a></li>
+                        <li><a href="#" onclick="showSubmenuContent('paris')">Paris and Algeria</a></li>
+                        <li><a href="#" onclick="showSubmenuContent('exile')">Exile and Argenteuil</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li>
+                <a href="#" onclick="showSection('tables')">Tables</a>
+            </li>
+            <li>
+                <a href="#" onclick="showSection('exhibitions'); toggleSubMenu('exhibitions-submenu')">Exhibitions</a>
+                <nav id="exhibitions-submenu">
+                    <ul>
+                        <li><a href="#" onclick="showSubmenuContent('orsay')">Paris</a></li>
+                        <li><a href="#" onclick="showSubmenuContent('london')">London</a></li>
+                        <li><a href="#" onclick="showSubmenuContent('washington')">Washington</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li><a href="#" onclick="showSection('links')">Links</a></li>
+            <li><a href="#" onclick="showSection('management')">Management</a></li>
+        </ul>
+    </nav>    <aside>
+        <div id="biography-menu" class="hidden">
+        </div>
+        <div id="tables-menu" class="hidden">
+        </div>
+        <div id="exhibitions-menu" class="hidden">
+        </div>
+        <div id="links-menu" class="hidden">
+        </div>
+        <div id="management-menu" class="hidden">
+        </div>
+    </aside>
+    <main>
+        <div id="info-content" class="hidden">
+            <h2>Information</h2>
+            <p>Oscar-Claude Monet (was born in 14 November 1840 - 5 December 1926) was a French painter and founder of Impressionism painting who is seen as a key precursor to modernism, especially in his attempts to paint nature as he perceived it. During his long career, he was the most consistent and prolific practitioner of Impressionism's philosophy of expressing one's perceptions of nature, especially as applied to plein air (outdoor) landscape painting.[2] The term "Impressionism" is derived from the title of his painting Impression, soleil levant, which was first exhibited in the so-called "exhibition of rejects" of 1874 - an exhibition initiated by Monet and like-minded artists as an alternative to the Salon.</p>
+            <p>Monet was raised in Le Havre, Normandy, and became interested in the outdoors and drawing from an early age. Although his mother, Louise-Justine Aubrée Monet, supported his ambitions to be a painter, his father, Claude-Adolphe, disapproved and wanted him to pursue a career in business. He was very close to his mother, but she died in January 1857 when he was sixteen years old, and he was sent to live with his childless, widowed but wealthy aunt, Marie-Jeanne Lecadre. He went on to study at the Académie Suisse, and under the academic history painter Charles Gleyre, where he was a classmate of Auguste Renoir. His early works include landscapes, seascapes, and portraits, but attracted little attention. A key early influence was Eugène Boudin, who introduced him to the concept of plein air painting. From 1883, Monet lived in Giverny, also in northern France, where he purchased a house and property and began a vast landscaping project, including a water-lily pond.</p>
+        </div>
+        <div id="birth-content" class="hidden">
+            <h2>Birth and Childhood</h2>
+            <p>Claude Monet was born on 14 November 1840 on the fifth floor of 45 rue Laffitte, in the 9th arrondissement of Paris. He was the second son of Claude Adolphe Monet (1800 - 1871) and Louise Justine Aubrée Monet (1805 - 1857), both of them second-generation Parisians. On 20 May 1841, he was baptised in the local Paris church, Notre-Dame-de-Lorette, as Oscar-Claude, but his parents called him simply Oscar. Although baptised Catholic, Monet later became an atheist. In 1845, his family moved to Le Havre in Normandy. His father, a wholesale merchant, wanted him to go into the family's ship-chandling and grocery business, but Monet wanted to become an artist. His mother was a singer, and supported Monet's desire for a career in art.
+                <p>On 1 April 1851, he entered Le Havre secondary school of the arts. He was an apathetic student who, after showing skill in art from a young age, began drawing caricatures and portraits of acquaintances at age 15 for money. He began his first drawing lessons from Jacques-François Ochard, a former student of Jacques-Louis David. In around 1858, he met fellow artist Eugène Boudin, who would encourage Monet to develop his techniques, teach him the "en plein air" (outdoor) techniques for painting and take Monet on painting excursions. Monet thought of Boudin as his master, whom "he owed everything to" for his later success. In 1857, his mother died. He lived with his father and aunt, Marie-Jeanne Lecadre; Lecadre would be a source of support for Monet in his early art career.</p>
+        </div>
+        <div id="paris-content" class="hidden">
+            <h2>Paris and Algeria</h2>
+            <p>From 1858 to 1860, Monet continued his studies in Paris, where he enrolled in Académie Suisse and met Camille Pissarro in 1859. He was called for military service and served under the Chasseurs d'Afrique (African Hunters), in Algeria, from 1861 to 1862. His time in Algeria had a powerful effect on Monet, who later said that the light and vivid colours of North Africa "contained the gem of my future researches". Illness forced his return to Le Havre, where he bought out his remaining service and met Johan Barthold Jongkind, who together with Boudin was an important mentor to Monet.</p>
+            <p>Upon his return to Paris, with the permission of his father, he divided his time between his childhood home and the countryside and enrolled in Charles Gleyre's studio, where he met Pierre-Auguste Renoir and Frédéric Bazille. Bazille eventually became his closest friend. In search of motifs, they traveled to Honfleur where Monet painted several "studies" of the harbor and the mouth of the Seine. Monet often painted alongside Renoir and Alfred Sisley, both of whom shared his desire to articulate new standards of beauty in conventional subjects.</p>
+            <p>During this time he painted Women in Garden, his first successful large-scale painting, and Le déjeuner sur l'herbe, the "most important painting of Monet's early period". Having debuted at the Salon in 1865 with La Pointe de la Hève at Low Tide and Mouth of the Seine at Honfleur to large praise, he hoped Le déjeuner sur l'herbe would help him break through into the Salon of 1866. He could not finish it in a timely manner and instead submitted The Woman in the Green Dress and Pavé de Chailly to acceptance. Thereafter, he submitted works to the Salon annually until 1870, but they were accepted by the juries only twice, in 1866 and 1868. He sent no more works to the Salon until his single, final attempt in 1880. His work was considered radical, "discouraged at all official levels".</p>
+            
+        </div>
+        <div id="exile-content" class="hidden">
+            <h2>Exile and Argenteuil</h2>
+            <p>He married Camille on 28 June 1870, just before the outbreak of the Franco-Prussian War. During the war, he and his family lived in London and the Netherlands to avoid conscription. Monet and Charles-François Daubigny lived in self-imposed exile. While living in London, Monet met his old friend Pissarro and the American painter James Abbott McNeill Whistler, and befriended his first and primary art dealer, Paul Durand-Ruel, an encounter that would be decisive for his career. There he saw and admired the works of John Constable and J. M. W. Turner and was impressed by Turner's treatment of light, especially in the works depicting the fog on the Thames. He repeatedly painted the Thames, Hyde Park and Green Park. In the spring of 1871, his works were refused authorisation for inclusion in the Royal Academy exhibition and police suspected him of revolutionary activities. That same year he learned of his father's death.</p>
+            <p>The family moved to Argenteuil in 1871, where he, influenced by his time with Dutch painters, mostly painted the Seine's surrounding area. He acquired a sailboat to paint on the river. In 1874, he signed a six-and-a-half year lease and moved into a newly built "rose-colored house with green shutters" in Argenteuil, where he painted fifteen paintings of his garden from a panoramic perspective. Paintings such as Gladioli marked what was likely the first time Monet had cultivated a garden for the purpose of his art. The house and garden became the "single most important" motif of his final years in Argenteuil. For the next four years, he painted mostly in Argenteuil and took an interest in the colour theories of chemist Michel Eugène Chevreul. For three years of the decade, he rented a large villa in Saint-Denis for a thousand francs per year. Camille Monet on a Garden Bench displays the garden of the villa, and what some have argued to be Camille's grief upon learning of her father's death.</p>
+        </div>
+        <div id="biography" class="hidden">
+        </div>
+        <div id="tables" class="hidden">
+            <h2>Tables</h2>
+                <table id="exhibition-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Location</th>
+                            <th>Year</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                <tbody>
+                    <!-- Data will be populated here -->
+                </tbody>
+            </table>
+        </div>
+            <div id="exhibitions" class="hidden">
+                <div id="orsay-content" class="hidden">
+                    <h2>Musée d'Orsay, Paris</h2>
+                    <div class="exhibition">
+                        <figure>
+                            <img src="https://cdn.mediatheque.epmoo.fr/link/3c9igq/cun1arcnyfzrn1c.jpg" alt="Exhibition Photo 1" style="width: 250px; height: auto;">
+                            <figcaption>" Nymphéas bleus "</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://news.artnet.com/app/news-upload/2024/09/5649-024-scaled.jpg" alt="Exhibition Photo 2" style="width: 250px; height: auto;">
+                            <figcaption>" Impression, Sunrise "</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://cdn.mediatheque.epmoo.fr/link/3c9igq/uvz1aqbu31ni44g.jpg" alt="Exhibition Photo 2" style="width: 250px; height: auto;">
+                            <figcaption>" Coquelicots "</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://cdn.mediatheque.epmoo.fr/link/3c9igq/gul1aq5szbn0h0g.jpg" alt="Exhibition Photo 3" style="width: 250px; height: auto;">
+                            <figcaption>" La Gare Saint-Lazare "</figcaption>
+                        </figure>
+                        <figure> 
+                            <img src="https://cdn.mediatheque.epmoo.fr/link/3c9igq/esy1aq2p49n776o.jpg" alt="Exhibition Photo 3" style="width: 250px; height: auto;">
+                            <figcaption>" Le Jardin de l'artiste à Giverny "</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            <div id="london-content" class="hidden">
+                <h2>The National Gallery, London</h2>
+                    <div class="exhibition">
+                        <figure>
+                            <img src="https://www.nationalgallery.org.uk/media/34707/n-6527-00-000020-hd.jpg?rxy=0.53978494623655915,0.47701149425287354&width=800&height=800&v=1d6544a51e4cab0&bgcolor=fff" alt="Exhibition Photo 3" style="width: 250px; height: auto;">
+                            <figcaption>" The Museum at Le Havre "</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://www.nationalgallery.org.uk/media/34793/n-6607-00-000013-hd.jpg?rxy=0.54802259887005644,0.58422939068100355&width=800&height=800&v=1d6544b2c49e910&bgcolor=fff" alt="Exhibition Photo 2" style="width: 250px; height: auto;">
+                            <figcaption>" Snow Scene at Argenteuil "</figcaption>
+                        </figure>
+                        <figure> 
+                            <img src="https://www.nationalgallery.org.uk/media/34575/n-6399-00-000035-hd.jpg?rxy=0.621505376344086,0.52333333333333332&width=800&height=800&v=1d65448fdcfa270&bgcolor=fff" alt="Exhibition Photo 3" style="width: 250px; height: auto;">
+                            <figcaption>" The Thames below Westminster "</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://www.nationalgallery.org.uk/media/33966/n-3262-00-000022-hd.jpg?width=800&height=800&v=1d65442e2bb9fd0&bgcolor=fff" alt="Exhibition Photo 1" style="width: 250px; height: auto;">
+                            <figcaption>" Lavacourt under Snow "</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://www.nationalgallery.org.uk/media/34747/n-6565-00-000027-hd.jpg?rxy=0.18361581920903955,0.66839378238341973&width=800&height=800&v=1d6544ab5978ed0&bgcolor=fff" alt="Exhibition Photo 2" style="width: 250px; height: auto;">
+                            <figcaption>" La Pointe de la Hève, Sainte-Adresse "</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            <div id="washington-content" class="hidden">
+                <h2>National Gallery Of Arts, Washington</h2>
+                    <div class="exhibition">
+                        <figure>
+                            <img src="https://media.nga.gov/iiif/9fc88734-2f9a-4da8-8d46-2b570b201223/full/full/0/default.jpg?attachment_filename=the_artist%27s_garden_at_vetheuil_1970.17.45.jpg" alt="Exhibition Photo 3" style="width: 250px; height: auto;">
+                            <figcaption>" The Artist's Garden at Vétheuil "</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://media.nga.gov/iiif/99758d9d-c10b-4d02-a198-7e49afb1f3a6/full/!600,600/0/default.jpg" alt="Exhibition Photo 2" style="width: 250px; height: auto;">
+                            <figcaption>" Woman with a Parasol "</figcaption>
+                        </figure>
+                        <figure> 
+                            <img src="https://www.nationalgallery.org.uk/media/34575/n-6399-00-000035-hd.jpg?rxy=0.621505376344086,0.52333333333333332&width=800&height=800&v=1d65448fdcfa270&bgcolor=fff" alt="Exhibition Photo 3" style="width: 250px; height: auto;">
+                            <figcaption>" The Thames below Westminster "</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd8VQs64V7jc4CbOEwbR0mIdVpt7Z7JtZxnQ&s" alt="Exhibition Photo 2" style="width: 250px; height: auto;">
+                            <figcaption>" The Seine at Vétheuil "</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://media.nga.gov/iiif/b9b6782a-cbf0-4e36-84da-98af87891775/full/!740,560/0/default.jpg" alt="Exhibition Photo 1" style="width: 250px; height: auto;">
+                            <figcaption>" The Portal (Sunlight) "</figcaption>
+                        </figure>
+                    </div>  
+            </div>
+
+        <div id="links" class="hidden">
+            <h2>Links</h2>
+            <p>Links content...</p>
+        </div>
+        <div id="management" class="hidden">
+            <h2>Management</h2>
+            <p>Management content...</p>
+        </div>
+    </main>
+    <footer>
+        <p style="font-size: 0.7rem;"> H παρούσα ιστοσελίδα και τα στοιχεία τα οποία εμφανίζονται εντός αυτής είναι προιόν προπτυχιακής εργασίας του φοιτητή Τσίμπα Μιχαήλ, Πανεπιστήμιο Θεσσαλίας με σκοπό την ικανοποίηση των απαιτήσεων του μαθήματος. Συνεπώς τα στοιχεία τα οποία εμφανίζονται στην ιστοσελίδα δεν αποτελούν προτότυπη δημιουργία, ούτε έχουν σκοπό να ιδιοποιηθούν έτερα δικαιόματα πάνω σε αυτά. Τέλος ο δημιουργός δεν φέρει καμία ευθύνη, όσον αφορά τις πληροφορίες που εκτίθονται.</p>
+    </footer>
+    <script>
+        function showSection(section) {
+            const sections = ['biography', 'tables', 'exhibitions', 'links', 'management'];
+            sections.forEach(sec => {
+                document.getElementById(sec).classList.add('hidden');
+                document.getElementById(sec + '-menu').classList.add('hidden');
+            });
+            document.getElementById(section).classList.remove('hidden');
+            document.getElementById(section + '-menu').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

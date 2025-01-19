@@ -1,0 +1,87 @@
+.exhibition {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.exhibition figure {
+    margin: 0;
+    text-align: center;
+}
+
+.exhibition img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#biography-submenu {
+    padding-left: 20px;
+}
+
+#biography-submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#biography-submenu li {
+    margin: 3px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
